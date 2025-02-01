@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+    .captions {
+      width: 410px;
+      border: 3px solid black;
+      font-size: 30px;
+    }
+
+    .part {
+     width: 400px;
+     height: 30px;
+     border: 3px solid black;
+     text-align: center;
+     font-size: 30px; 
+     display: block;
+     justify-content: center; 
+     align-items: right; 
+     
+    }
+
+    .element {
+     width: 80px;
+     height: 80px;
+     border: 3px solid black;
+     text-align: center;
+     font-size: 30px; 
+     display: inline-flex;
+     justify-content: center; 
+     align-items: center; 
+    }
+
+    </style>
+
+    <title>Tic Tac TOE</title>
+
+</head>
+
+<body>
+
+  <table id="winTableBody" class="winTable" align="right" cellspacing="10">
+    <caption class="captions">Історія раундів</caption>
+
+
+  </table>
+
+  <div id="TicTacToeBoard">
+      <div onclick='makeMove(0, 0)' id="element1" class="element"></div>
+      <div onclick='makeMove(0, 1)' id="element2" class="element"></div>
+      <div onclick='makeMove(0, 2)' id="element3" class="element"></div>
+    <br>
+      <div onclick='makeMove(1, 0)' id="element4" class="element"></div>
+      <div onclick='makeMove(1, 1)' id="element5" class="element"></div>
+      <div onclick='makeMove(1, 2)' id="element6" class="element"></div>
+    <br>
+      <div onclick='makeMove(2, 0)' id="element7" class="element"></div>
+      <div onclick='makeMove(2, 1)' id="element8" class="element"></div>
+      <div onclick='makeMove(2, 2)' id="element9" class="element"></div>
+  </div> 
+  
+  <br>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
